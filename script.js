@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //   btn delete
     li.querySelector(".delete-btn").addEventListener("click", () => {
-      li.remove;
+      li.remove();
     });
 
     todoList.appendChild(li);

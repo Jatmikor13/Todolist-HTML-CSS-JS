@@ -149,6 +149,10 @@ button {
   border-radius: 10px;
   color: white;
   text-transform: uppercase;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .badge.basic {
@@ -159,4 +163,38 @@ button {
 }
 .badge.advanced {
   background: red;
+}
+
+/* Media Query untuk layar HP (Mobile) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px; /* Mengurangi padding body agar container tidak terlalu sempit */
+  }
+
+  .container {
+    padding: 15px; /* Sedikit mempersempit padding dalam */
+  }
+
+  .user-profile {
+    flex-direction: row; /* Tetap sejajar, atau ganti column jika ingin foto di atas */
+    align-items: center;
+  }
+
+  /* Membuat input, select, dan button tersusun vertikal */
+  .input-wrapper {
+    flex-direction: column;
+    align-items: stretch; /* Agar lebar elemen 100% */
+    gap: 10px;
+  }
+
+  input[type="text"],
+  select,
+  button {
+    width: 100%; /* Memastikan semua elemen memenuhi lebar container */
+    padding: 12px; /* Menyesuaikan ukuran padding agar nyaman ditekan jari */
+  }
+
+  .tittle-input h1 {
+    font-size: 14px; /* Sedikit mengecilkan judul agar tidak pecah baris */
+  }
 }
