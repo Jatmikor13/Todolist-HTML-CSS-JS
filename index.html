@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="user-profile">
+        <div class="avatar">
+          <img src="asset-img/profile.JPG" alt="user-profile" />
+        </div>
+
+        <div class="user-info">
+          <h2 id="user-name">Jatmiko Riyanto</h2>
+          <p id="user-role">FullStack Web Developer</p>
+          <span id="currentDate" class="date"></span>
+        </div>
+      </header>
+
+      <hr />
+
+      <section class="todo-input-section">
+        <div class="tittle-input">
+          <img src="asset-img/todolist-img2.jpg" alt="todolist-img" />
+          <h1 class="judul-input">Todo List :</h1>
+        </div>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Tuliskan tugas baru..."
+            autocomplete="off"
+          />
+          <select id="prioritySelect">
+            <option value="basic">Basic</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <button id="addBtn">Submit</button>
+        </div>
+      </section>
+
+      <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
